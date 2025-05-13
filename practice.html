@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+     <style>
+        table{
+
+            width: 70%;
+        }
+      
+        table,tr,td,th{
+            
+            border: 1px solid black;
+             border-collapse: collapse ;
+             
+        }
+
+tr{
+    height: 35px;
+td{
+    text-align: center;
+}
+}
+tr:nth-child(even){
+    background-color: rgb(213, 229, 233);
+}
+tfoot{
+    background-color: rgb(189, 221, 241);
+    th{
+        text-align: right;
+    }
+}
+thead{
+     background-color: rgb(189, 221, 241);
+  
+}
+.qbz{
+    background-color: rgb(229, 211, 237);
+}
+.ta{
+    background-color: rgb(189, 255, 189);
+}
+.bart{
+    background-color: rgb(231, 163, 163);
+}
+
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">ID</th>
+            <th colspan="2">Membership Dates</th>
+            <th rowspan="2">Balance</th>
+        </tr>
+        <tr>
+<th class="ta">Joined</th>
+<th class="bart">cancelled</th>
+        </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td class="qbz">Margaret Nguyen</td>
+                <td>427311</td>
+                <td>June 3, 2010</td>
+                <td>n/a</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td class="qbz">Edvard Galinski</td>
+                <td>533175</td>
+                <td>January 13, 2011</td>
+                <td>April 8, 2017</td>
+                <td>37.00</td>
+            </tr>
+            <tr>
+                <td class="qbz">Hoshi nakamura</td>
+                <td>601942</td>
+                <td>July 23, 2012</td>
+                <td>n/a</td>
+                <td>15.00</td>
+            </tr>
+
+        </tbody>
+        <tfoot> 
+            <tr>
+                <th colspan="4">Total balance</th>
+                <td>52.00</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
